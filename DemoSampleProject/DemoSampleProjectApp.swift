@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct DemoSampleProjectApp: App {
+    @StateObject private var devCycleManager = DevCycleManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(devCycleManager)
+                .onAppear {
+                    devCycleManager.initialize()
+                }
         }
     }
 }

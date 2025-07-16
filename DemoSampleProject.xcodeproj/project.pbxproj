@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		82A10DFA2E27FD9E0085DAAE /* DevCycle in Frameworks */ = {isa = PBXBuildFile; productRef = 82A10DF92E27FD9E0085DAAE /* DevCycle */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		82A10DBA2E27F7BB0085DAAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A10DFA2E27FD9E0085DAAE /* DevCycle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = DemoSampleProject;
 			packageProductDependencies = (
+				82A10DF92E27FD9E0085DAAE /* DevCycle */,
 			);
 			productName = DemoSampleProject;
 			productReference = 82A10DA92E27F7B80085DAAE /* DemoSampleProject.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 82A10DA02E27F7B80085DAAE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				82A10DF62E27FB4F0085DAAE /* XCRemoteSwiftPackageReference "ios-client-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 82A10DAA2E27F7B80085DAAE /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82A10DF62E27FB4F0085DAAE /* XCRemoteSwiftPackageReference "ios-client-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DevCycleHQ/ios-client-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82A10DF92E27FD9E0085DAAE /* DevCycle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82A10DF62E27FB4F0085DAAE /* XCRemoteSwiftPackageReference "ios-client-sdk" */;
+			productName = DevCycle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82A10DA12E27F7B80085DAAE /* Project object */;
 }
