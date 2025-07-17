@@ -22,7 +22,7 @@ class DevCycleManager: ObservableObject {
             
             // Initialize the DevCycle client
             self.devcycleClient = try DevCycleClient.builder()
-                .sdkKey("dvc_mobile_a3e2bd6d_abbc_4dde_8f67_d02d6b52b1c8_4f08fc0") // Using the key from the sample code
+                .sdkKey("Replace With your key") // Using the key from the sample code
                 .user(user)
                 .options(DevCycleOptions.builder().logLevel(.debug).build())
                 .build { [weak self] error in
