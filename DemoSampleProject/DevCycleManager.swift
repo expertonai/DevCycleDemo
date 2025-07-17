@@ -14,7 +14,10 @@ class DevCycleManager: ObservableObject {
         do {
             // Create an anonymous user. In a real app, you would likely use a stable user ID.
             //let user = try DevCycleUser.builder().isAnonymous(true).build()
-            let user = try DevCycleUser.builder().userId("12345").customData(["accoutType":"employeeAcct"]).build()
+            let user = try DevCycleUser
+                .builder()
+                .customData(["HASHED_SRF_ID":"123453","ACCOUNT_TYPE":"employeeAcct3"])//"HASHED_SRF_ID":"1234567890", "ACCOUNT_TYPE":"employeeAcct",
+                .build()
             
             
             // Initialize the DevCycle client
